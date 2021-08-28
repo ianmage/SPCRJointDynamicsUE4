@@ -18,19 +18,19 @@ public:
 	// Sets default values for this component's properties
 	USPCRJointDynamicsComponent();
 
-	//ƒŠƒZƒbƒg‚ğs‚¤ƒtƒ‰ƒO‚ğƒIƒ“‚É‚·‚é
+	//å„•åƒ™åƒ¢åƒ©å‚ªå³´å†åƒ¼å„”åƒŒå‚ªåƒ†å„åµå¡å‚
 	//UFUNCTION(BlueprintCallable)
 	void OnStartReset();
 
-	//AnimBP‚ÌJointDynamicsƒm[ƒh‚ÅƒŠƒZƒbƒg‚ğs‚Á‚½‚Æ‚«‚ÉŒÄ‚Î‚ê‚é
+	//AnimBPåºJointDynamicsåƒ²ä¹•åƒªå±å„•åƒ™åƒ¢åƒ©å‚ªå³´å­å¨å²å’åµå±‡å½å‚Ÿå‚
 	void OnFinishReset();
 
-	//ƒŠƒZƒbƒgƒtƒ‰ƒO
-	UPROPERTY(BlueprintReadOnly)
+	//å„•åƒ™åƒ¢åƒ©åƒ¼å„”åƒŒ
+	UPROPERTY(BlueprintReadOnly, Category = "Physics")
 	bool isReset;
 
 protected:
-	//ƒŠƒZƒbƒgˆ—I—¹Šm”F‚Ìƒtƒ‰ƒO
+	//å„•åƒ™åƒ¢åƒ©å¼µæ£Ÿå»”æ¤†å¦‹æ“£åºåƒ¼å„”åƒŒ
 	bool isFinishReset;
 
 	// Called when the game starts
