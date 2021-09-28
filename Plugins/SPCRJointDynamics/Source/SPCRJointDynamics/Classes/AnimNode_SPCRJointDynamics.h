@@ -80,7 +80,7 @@ struct SPCRJOINTDYNAMICS_API FSPCRCurve
 		if(Curve != nullptr)
 			return Curve->GetFloatValue(Rate) * Power;
 
-		//ƒJ[ƒu‚ª‚È‚¢ê‡
+		// ã‚«ãƒ¼ãƒ–ãŒãªã„å ´åˆ
 		return Power;
 	}
 };

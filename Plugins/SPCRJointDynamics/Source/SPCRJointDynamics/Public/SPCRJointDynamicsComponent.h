@@ -18,19 +18,19 @@ public:
 	// Sets default values for this component's properties
 	USPCRJointDynamicsComponent();
 
-	//儕僙僢僩傪峴偆僼儔僌傪僆儞偵偡傞
+	//リセットを行うフラグをオンにする
 	//UFUNCTION(BlueprintCallable)
 	void OnStartReset();
 
-	//AnimBP偺JointDynamics僲乕僪偱儕僙僢僩傪峴偭偨偲偒偵屇偽傟傞
+	//AnimBPのJointDynamicsノードでリセットを行ったときに呼ばれる
 	void OnFinishReset();
 
-	//儕僙僢僩僼儔僌
+	//リセットフラグ
 	UPROPERTY(BlueprintReadOnly, Category = "Physics")
-	bool isReset;
+		bool isReset;
 
 protected:
-	//儕僙僢僩張棟廔椆妋擣偺僼儔僌
+	//リセット処理終了確認のフラグ
 	bool isFinishReset;
 
 	// Called when the game starts

@@ -19,7 +19,6 @@ public class SPCRJointDynamics : ModuleRules
                 "SPCRJointDynamics/Private/AnimNode",
                 "SPCRJointDynamics/Private/Config",
                 "SPCRJointDynamics/Private/Log",
-                "SPCRJointDynamics/Private/Memory",
                 "SPCRJointDynamics/Private/Profile",
                 // ... add other private include paths required here ...
             }

@@ -4,6 +4,7 @@
 //======================================================================================
 #include "SPCRJointDynamicsMngComponent.h"
 
+
 // Sets default values for this component's properties
 USPCRJointDynamicsMngComponent::USPCRJointDynamicsMngComponent()
 {
@@ -41,7 +42,7 @@ void USPCRJointDynamicsMngComponent::SetActors() {
 	actor->GetAttachedActors(attachedActors);
 	jointDynamicsComponents.Empty();
 
-	//アタッチされたアクターたち
+	// 繧｢繧ｿ繝�繝√＆繧後◆繧｢繧ｯ繧ｿ繝ｼ縺溘■
 	for (int i = 0; i < attachedActors.Num();i++) {
 		USPCRJointDynamicsComponent* component = (USPCRJointDynamicsComponent*)(attachedActors[i]->GetComponentByClass(USPCRJointDynamicsComponent::StaticClass()));
 		if (component != NULL) {
@@ -49,7 +50,7 @@ void USPCRJointDynamicsMngComponent::SetActors() {
 		}
 	}
 
-	//自身
+	// 閾ｪ霄ｫ
 	USPCRJointDynamicsComponent* component = (USPCRJointDynamicsComponent*)(actor->GetComponentByClass(USPCRJointDynamicsComponent::StaticClass()));
 	if (component != NULL) {
 		jointDynamicsComponents.Add(component);

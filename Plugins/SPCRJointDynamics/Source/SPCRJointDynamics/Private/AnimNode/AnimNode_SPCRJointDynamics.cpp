@@ -8,6 +8,8 @@
 #include "AnimationRuntime.h"
 #include "DrawDebugHelpers.h"
 #include "SPCRJointDynamicsModulePCH.h"
+#include "Misc/MessageDialog.h"
+
 
 static const float SPCR_EPSILON = 0.0001f;
 

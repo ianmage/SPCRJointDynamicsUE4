@@ -5,6 +5,7 @@
 #include "SPCRJointDynamicsComponent.h"
 //#include "Actor.h"
 
+
 // Sets default values for this component's properties
 USPCRJointDynamicsComponent::USPCRJointDynamicsComponent()
 {

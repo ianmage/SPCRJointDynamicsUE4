@@ -3,12 +3,7 @@
 //  All rights reserved.
 //======================================================================================
 #include "SPCRJointDynamicsStaticFunctions.h"
-
 #include "SPCRJointDynamicsModulePCH.h"
-
-#include "EngineGlobals.h"
-#include "Engine/Engine.h"
-
 #include "SPCRJointDynamicsRuntimeSettings.h"
 
 //======================================================================================

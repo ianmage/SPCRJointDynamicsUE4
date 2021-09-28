@@ -11,15 +11,19 @@
 
 #define LOCTEXT_NAMESPACE "SPCRJointDynamicsAnimNode"
 
+
 UAnimGraphNode_SPCRJointDynamics::UAnimGraphNode_SPCRJointDynamics(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
 {
 }
 
+
 FText UAnimGraphNode_SPCRJointDynamics::GetNodeTitle(ENodeTitleType::Type TitleType) const
 {
 	return LOCTEXT("NodeTitle", "SPCR Joint Dynamics");
 }
+
+
 void UAnimGraphNode_SPCRJointDynamics::Draw(FPrimitiveDrawInterface* PDI, USkeletalMeshComponent* PreviewSkelMeshComp) const
 {
 	if (LastPreviewComponent != PreviewSkelMeshComp)
@@ -90,10 +94,13 @@ void UAnimGraphNode_SPCRJointDynamics::Draw(FPrimitiveDrawInterface* PDI, USkele
 		}
 	}
 }
+
+
 void UAnimGraphNode_SPCRJointDynamics::GetOnScreenDebugInfo(TArray<FText>& DebugInfo, FAnimNode_Base* RuntimeAnimNode, USkeletalMeshComponent* PreviewSkelMeshComp) const
 {
 	Super::GetOnScreenDebugInfo(DebugInfo, RuntimeAnimNode, PreviewSkelMeshComp);
 }
+
 
 //FText UAnimGraphNode_SPCRJointDynamics::GetTooltipText() const
 //{
